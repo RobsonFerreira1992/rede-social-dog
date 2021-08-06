@@ -45,10 +45,13 @@ const Feed = ({user}) => {
   )
 }
 Feed.defaultProps = {
-  user: 0
-}
-Feed.PropTypes = {
-  user: PropTypes.oneOfType([PropTypes.string.isRequired, PropTypes.number.isRequired])
-}
+  user: 0,
+};
 
+Feed.propTypes = {
+  user: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.number.isRequired,
+  ]),
+};
 export default Feed

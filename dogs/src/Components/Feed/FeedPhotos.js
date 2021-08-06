@@ -5,6 +5,8 @@ import { PHOTOS_GET } from '../../api';
 import Erro from '../Helper/Erro';
 import Loading from '../Helper/Loading';
 import styles from './FeedPhotos.module.css'
+
+
 const FeedPhotos = ({page, user, setModalPhoto, setInfinite}) => {
 
   const {data, loading, error, request} = useFetch();
